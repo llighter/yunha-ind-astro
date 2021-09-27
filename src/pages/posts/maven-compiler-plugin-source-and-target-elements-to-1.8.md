@@ -5,6 +5,8 @@ description: |
 date: 2021-09-27
 publishDate: 'Monday, Sep 27 2021'
 authors: 'llighter'
+heroImage: '/hero.png'
+alt: 'Hero'
 layout: '../../layouts/BlogPost.astro'
 ---
 
@@ -32,13 +34,13 @@ Java 8 언어 기능(`-source 1.8`)을 사용하고 컴파일된 클래스가 JV
 
 다른 IDE에서도 변경된 사항을 적용해주거나 프로젝트를 다시 열게 되면 변경사항이 적용될 것이다. VS Code에서는 변경사항을 자동으로 인식해 동기화를 할지 물어본다.
 
-![image](update-alert.png)
+![image](/update-alert.png)
 
 자바 프로젝트를 확인하면 기본값인 `1.7`에서 `1.8`로 변경된 것을 확인할 수 있다.
 
-![image](javase-1.7.png)
+![image](/javase-1.7.png)
 
-![image](javase-1.8.png)
+![image](/javase-1.8.png)
 
 다시 소스로 돌아가보자. 이제 람다를 마음껏 활용할 수 있다.
 
