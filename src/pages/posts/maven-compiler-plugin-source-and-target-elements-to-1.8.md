@@ -1,7 +1,6 @@
 ---
 title: "maven 컴파일러 자바 버전 변경하기"
-description: |
-  "maven compiler plugin source and target to 1.8"
+description: "maven compiler plugin source and target to 1.8"
 date: 2021-09-27
 publishDate: 'Monday, Sep 27 2021'
 authors: 'llighter'
