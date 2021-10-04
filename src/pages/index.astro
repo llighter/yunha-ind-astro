@@ -3,6 +3,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import BlogHeader from '../components/BlogHeader.astro';
 import BlogPostPreview from '../components/BlogPostPreview.astro';
+import BlogPostCardPreview from '../components/BlogPostCardPreview.astro';
 
 interface MarkdownFrontmatter {
   publishDate: number;
@@ -28,7 +29,10 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
   <head>
     <BaseHead title={title} description={description} permalink={permalink} />
     <link rel="stylesheet" href="/blog.css" />
-
+    <link
+      rel="stylesheet"
+      href={Astro.resolve("../assets/global.css")}
+    >
     <style>
       body {
         width: 100%;
@@ -75,6 +79,13 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
 
   <body>
     <BlogHeader />
+    <div class="max-w-5xl sm:max-w-5xl mx-auto px-8 lg:px-12 py-8">
+      <h2 class="text-4xl text-gray-900 text-center font-semibold">최근 아티클</h2>
+      <p class="mt-2 text-gray-600 text-center">프론트부터 백엔드까지 다양한 개발 이야기를 만나보세요</p>
+      <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {allPosts.map(p => <BlogPostCardPreview post={p} />)}
+      </div>
+    </div>
     <div class="layout">
       <article class="content">
         <section class="intro">

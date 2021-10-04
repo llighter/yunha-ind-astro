@@ -6,6 +6,7 @@ author: 'fred'
 heroImage: '/social.jpg'
 alt: 'Astro'
 layout: '../../layouts/BlogPost.astro'
+type: Blog
 ---
 
 There's a simple secret to building a faster website — _just ship less_.

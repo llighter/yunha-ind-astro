@@ -1,12 +1,12 @@
 ---
 title: "maven 컴파일러 자바 버전 변경하기"
 description: "maven compiler plugin source and target to 1.8"
-date: 2021-09-27
 publishDate: 'Monday, Sep 27 2021'
 authors: 'llighter'
 heroImage: '/hero.png'
 alt: 'Hero'
 layout: '../../layouts/BlogPost.astro'
+type: 'Blog'
 ---
 
 VS Code로 자바 개발환경을 구성하면서 빌드 툴로 메이븐을 사용하였다. 연습하는 자바 소스에는 람다를 활용하는 소스가 있었는데 아래와 같은 오류로 컴파일이 되지 않았다.
