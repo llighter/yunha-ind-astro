@@ -5,12 +5,12 @@ export interface Props {
 
 const { post } = Astro.props;
 ---
-<div class="w-card">
+<div class="w-card group">
   <article class="w-card-base w-card-base__with--cover">
-    <div class="w-card-base__cover">
+    <div class="w-card-base__cover transform group-hover:-translate-y-1 transition duration-300 ease-in-out shadow-lg group-hover:shadow-2xl">
       <a href={post.url} class="w-card-base__link">
         <figure class="w-card-base__figure aspect-w-4 aspect-h-3">
-          <img src={post.heroImage} alt={post.alt} class="w-full rounded-xl shadow-lg object-cover object-center">
+          <img src={post.heroImage} alt={post.alt} class="w-full rounded-xl  object-cover object-center">
         </figure>
       </a>
     </div>
@@ -19,7 +19,7 @@ const { post } = Astro.props;
         <h2 class="text-lg leading-6 mt-2 font-medium text-gray-500">{post.type}</h2>
       </a>
       <a href={post.url} class="">
-        <h2 class="text-2xl font-semibold mt-2">{post.title}</h2>
+        <h2 class="text-2xl font-semibold mt-2 transform group-hover:text-blue-500 transition-colors duration-300 ease-in-out">{post.title}</h2>
       </a>
       <div class="text-gray-500 mt-2">
         <time>{post.publishDate}</time>
